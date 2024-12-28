@@ -42,4 +42,4 @@ https://www.zcyphygeodesy.com/en/h-nd-138.html
     1.4.1 Format convention for geodetic data file
     7.9.2 Vening-Meinesz integral formulas outside geoid
     7.1(4) Low-dgree Legendre function and its first and second derivative algorithms
-DOS executable test file and all input and output data.
+The zip compression package includes the test project in visual studio 2017 - intel fortran integrated environment, DOS executable test file and all input and output data.
