@@ -5,6 +5,7 @@ https://www.zcyphygeodesy.com/en/h-nd-138.html
     The generalized Vening-Meinesz formula is derived from the generalized Stokes/Hotine formula and belongs to the solution of the Stokes boundary value problem. Which requires the integrand gravity anomaly/disturbance to be on the equipotential surface.
     It is usually necessary to employ the remove-restore scheme with a reference geopotential model to use the finite radius for gravity field integral. Firstly, remove model gravity anomaly/disturbance on the boundary surface, then integrate to obtain the residual height anomaly at the calculation point, and finally restore the model height anomaly at the calculation point.
     The equipotential surface can be constructed from a global geopotential model (not greater than 360 degrees), which can also be represent by a normal (orthometric) equiheight surface with the altitude of not more than ten kilometers.
+![](https://24192633.s21i.faiusr.com/2/ABUIABACGAAg8OzltwYo-OvcowIwpQ047gg.jpg)
 ## [Main program for test entrance]
     Vening_Meinesznumintegral.f90 The record format of the input calculation point file: ID (point no / point name), longitude (decimal degrees), latitude (decimal degrees), ellipsoidal height (m)......
     Input the ellipsoidal height grid file of the equipotential boundary surface, which employed to calculate the integral distance.
@@ -43,3 +44,4 @@ https://www.zcyphygeodesy.com/en/h-nd-138.html
     7.9.2 Vening-Meinesz integral formulas outside geoid
     7.1(4) Low-dgree Legendre function and its first and second derivative algorithms
 The zip compression package includes the test project in visual studio 2017 - intel fortran integrated environment, DOS executable test file and all input and output data.
+![](https://24192633.s21i.faiusr.com/2/ABUIABACGAAg8OzltwYo1-HBwgYwpQ047gg.jpg)
