@@ -1,10 +1,10 @@
 ## Fortran codes for vertical deflection computation on or outside geoid using Vening-Meinesz numerical integral
 https://www.zcyphygeodesy.com/en/h-nd-138.html
 ## [Algorithm purpose]
-    Using the generalized Vening-Meinesz numerical integral, compute the vertical deflection (″, SW, to south, to west) on or outside the geoid from the ellipsoidal height grid of the equipotential surface and its gravity anomaly or disturbance (mGal) grid.
-    The generalized Vening-Meinesz formula is derived from the generalized Stokes/Hotine formula and belongs to the solution of the Stokes boundary value problem. Which requires the integrand gravity anomaly/disturbance to be on the equipotential surface.
-    It is usually necessary to employ the remove-restore scheme with a reference geopotential model to use the finite radius for gravity field integral. Firstly, remove model gravity anomaly/disturbance on the boundary surface, then integrate to obtain the residual height anomaly at the calculation point, and finally restore the model height anomaly at the calculation point.
-    The equipotential surface can be constructed from a global geopotential model (not greater than 360 degrees), which can also be represent by a normal (orthometric) equiheight surface with the altitude of not more than ten kilometers.
+&emsp;```Using the generalized Vening-Meinesz numerical integral, compute the vertical deflection (″, SW, to south, to west) on or outside the geoid from the ellipsoidal height grid of the equipotential surface and its gravity anomaly or disturbance (mGal) grid.```  
+&emsp;```The generalized Vening-Meinesz formula is derived from the generalized Stokes/Hotine formula and belongs to the solution of the Stokes boundary value problem. Which requires the integrand gravity anomaly/disturbance to be on the equipotential surface.```  
+&emsp;```It is usually necessary to employ the remove-restore scheme with a reference geopotential model to use the finite radius for gravity field integral. Firstly, remove model gravity anomaly/disturbance on the boundary surface, then integrate to obtain the residual height anomaly at the calculation point, and finally restore the model height anomaly at the calculation point.```  
+&emsp;```The equipotential surface can be constructed from a global geopotential model (not greater than 360 degrees), which can also be represent by a normal (orthometric) equiheight surface with the altitude of not more than ten kilometers.```
 ![](https://24192633.s21i.faiusr.com/2/ABUIABACGAAg8OzltwYo-OvcowIwpQ047gg.jpg)
 ## [Main program for test entrance]
     Vening_Meinesznumintegral.f90 The record format of the input calculation point file: ID (point no / point name), longitude (decimal degrees), latitude (decimal degrees), ellipsoidal height (m)......
